@@ -2,6 +2,7 @@
 /* jshint browser: true */
 /*global $:false, jQuery:false */
 /*jshint node:true*/
+
 //Cursor Effect
 let mouseCursor = document.querySelector(".cursor");
 let navLinks = document.querySelectorAll(".item");
@@ -23,7 +24,9 @@ navLinks.forEach(link => {
     });
 });
 //------------------------
+
 //Nav on scroll
+
 var prevScrollpos = window.pageYOffset;
 const header = document.querySelector("header");
 
@@ -58,6 +61,7 @@ $(function () {
 
     });
 });
+
 //------------------------
 
 //Arrow gray-white
@@ -68,7 +72,5 @@ $(".gray").hover(function () {
     },
     function () {
         $(".wh-on-hover").css("display", "none");
-     $(".dissapear").css("display", "inline");
+        $(".dissapear").css("display", "inline");
     });
-
-
