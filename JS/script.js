@@ -1,6 +1,7 @@
 /* jshint esversion: 6 */
 /* jshint browser: true */
 /*global $:false, jQuery:false */
+/*jshint node:true*/
 //Cursor Effect
 let mouseCursor = document.querySelector(".cursor");
 let navLinks = document.querySelectorAll(".item");
@@ -23,29 +24,40 @@ navLinks.forEach(link => {
 });
 //------------------------
 //Nav on scroll
+var prevScrollpos = window.pageYOffset;
 const header = document.querySelector("header");
-const sectionOne = document.querySelector("main");
 
-const sectionOneOptions = {
-    rootMargin: "-50px 0px 0px 0px"
+const main = document.querySelector("main");
+window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+    var $win = $(window);
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+        header.classList.add("nav-scrolled");
+        $("h4").removeClass("nav-text");
+        $("path").addClass("fill");
+        $("a").addClass("scrolled");
+
+    } else {
+        document.getElementById("navbar").style.top = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
 };
 
-const sectionOneObserver = new IntersectionObserver(function (entries, sectionOneObserver) {
-    entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-            header.classList.add("nav-scrolled");
-            $("h4").removeClass("nav-text");
-            $("path").addClass("fill");
-            $("a").addClass("scrolled");
-        } else {
+
+$(function () {
+    var $win = $(window);
+
+    $win.scroll(function () {
+        if ($win.scrollTop() == 0) {
             header.classList.remove("nav-scrolled");
             $("h4").addClass("nav-text");
             $("path").removeClass("fill");
             $("a").removeClass("scrolled");
-        }
+        } 
+
     });
-}, sectionOneOptions);
-sectionOneObserver.observe(sectionOne);
+});
 //------------------------
 
 //Arrow gray-white
