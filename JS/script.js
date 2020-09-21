@@ -1,3 +1,6 @@
+/* jshint esversion: 6 */
+/* jshint browser: true */
+/*global $:false, jQuery:false */
 //Cursor Effect
 let mouseCursor = document.querySelector(".cursor");
 let navLinks = document.querySelectorAll(".item");
