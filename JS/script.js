@@ -19,3 +19,41 @@ navLinks.forEach(link => {
     });
 });
 //------------------------
+//Nav on scroll
+const header = document.querySelector("header");
+const sectionOne = document.querySelector("main");
+
+const sectionOneOptions = {
+    rootMargin: "-50px 0px 0px 0px"
+};
+
+const sectionOneObserver = new IntersectionObserver(function (entries, sectionOneObserver) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            header.classList.add("nav-scrolled");
+            $("h4").removeClass("nav-text");
+            $("path").addClass("fill");
+            $("a").addClass("scrolled");
+        } else {
+            header.classList.remove("nav-scrolled");
+            $("h4").addClass("nav-text");
+            $("path").removeClass("fill");
+            $("a").removeClass("scrolled");
+        }
+    });
+}, sectionOneOptions);
+sectionOneObserver.observe(sectionOne);
+//------------------------
+
+//Arrow gray-white
+
+$(".gray").hover(function () {
+        $(".wh-on-hover").css("display", "inline");
+        $(".dissapear").css("display", "none");
+    },
+    function () {
+        $(".wh-on-hover").css("display", "none");
+     $(".dissapear").css("display", "inline");
+    });
+
+
