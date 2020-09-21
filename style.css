@@ -90,7 +90,9 @@ header {
     color: rgba(0, 0, 0, 0.3);
     font-weight: normal;
 }
-
+#navbar{
+    top: 0;
+}
 nav {
     max-width: 1140px;
     margin: auto;
