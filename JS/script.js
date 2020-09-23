@@ -42,7 +42,7 @@ window.onscroll = function () {
         $("a").addClass("scrolled");
 
     } else {
-        document.getElementById("navbar").style.top = "-50px";
+        document.getElementById("navbar").style.top = "-70px";
     }
     prevScrollpos = currentScrollPos;
 };
