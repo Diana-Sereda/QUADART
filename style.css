@@ -35,7 +35,15 @@ h1 {
 
 h3 {
     font-size: 20px;
+    line-height: 75px;
     z-index: 3;
+}
+
+h5 {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 19px;
+    margin-top: 11px;
 }
 
 body {
@@ -55,7 +63,7 @@ body {
     transform: translate(80%, -80%);
     pointer-events: none;
     transition: all 0.2s ease;
-    z-index: 1;
+    z-index: 10000;
 }
 
 .link-grow {
@@ -82,7 +90,7 @@ main {
 header {
     position: fixed;
     width: 100vw;
-    z-index: 1000;
+    z-index: 10000;
 }
 
 .nav-scrolled {
@@ -90,9 +98,11 @@ header {
     color: rgba(0, 0, 0, 0.3);
     font-weight: normal;
 }
-#navbar{
+
+#navbar {
     top: 0;
 }
+
 nav {
     max-width: 1140px;
     margin: auto;
@@ -122,9 +132,11 @@ li a {
     text-decoration: none;
     margin-right: 50px;
 }
-.scrolled{
+
+.scrolled {
     color: #000;
 }
+
 li:hover {
     text-decoration: underline;
 }
@@ -175,9 +187,11 @@ div .link {
     line-height: 75px;
 
 }
-.dissapear{
+
+.dissapear {
     display: inline;
 }
+
 .arrow:hover {
     padding-bottom: 8px;
     transition: 0.2s;
@@ -188,16 +202,15 @@ div .link {
 #info {
     background: #D9D9D9;
     color: #000;
-    width: 100%;
+    height: 850px;
     position: relative;
-}
-
-.info h4 {
-    font-size: 20px;
+    top: 0;
+    z-index: 1000;
 }
 
 .about {
     margin-left: 250px;
+     
 }
 
 .underline {
@@ -208,13 +221,42 @@ div .link {
 }
 
 .text-img {
-    width: 100%;
+    position: absolute;
+    left: -280px;
+    z-index: 1;
 }
 
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
+.item {
+    margin: 150px 250px 100px 0;
+    z-index: 10;
 }
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 300px;
+    width: 100vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+.outer-wrapper {
+    background: #D9D9D9;
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 
 /*Footer*/
 
@@ -280,14 +322,16 @@ div .inf {
 
 .footer-link a:hover {
     color: #fff;
-} 
+}
 
 .right {
     float: right;
 }
-.wh-on-hover{
+
+.wh-on-hover {
     display: none;
 }
+
 .gray {
     color: #707070;
 }
