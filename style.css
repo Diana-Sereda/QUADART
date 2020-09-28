@@ -45,7 +45,13 @@ h5 {
     line-height: 19px;
     margin-top: 11px;
 }
+ul{
+    list-style: none;
+}
 
+a{
+    text-decoration: none;
+}
 body {
     color: #fff;
     font-family: 'Geometria', sans-serif;
@@ -84,7 +90,7 @@ main {
 }
 
 .container {
-    max-width: 80%;
+    max-width: 85%;
     margin: auto;
 }
 
@@ -125,13 +131,11 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    list-style: none;
     z-index: 2;
 }
 
 li a {
     color: #fff;
-    text-decoration: none;
     margin-right: 50px;
 }
 
@@ -152,6 +156,7 @@ li:hover {
     top: 8px;
 }
 .zakz:hover {
+    cursor: pointer;
     top: 0;
     transition: 0.2s;
 }
@@ -189,7 +194,6 @@ div .link {
 .link a {
     display: flex;
     color: #fff;
-    text-decoration: none;
     justify-content: center;
     align-items: center;
     line-height: 75px;
@@ -199,6 +203,86 @@ div .link {
 .dissapear {
     display: inline;
 }
+
+/*Make order*/
+#make-order {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color: #F5C13F;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    color: #000;
+}
+
+#make-order > img {
+    position: absolute;
+    width: 100vw;
+}
+.close{
+    position: relative;
+}
+.close:hover{
+    cursor: pointer;
+}
+.p1 {
+    top: 0;
+}
+
+.p2 {
+    bottom: 0;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+
+.lg {
+    display: flex;
+    align-items: center;
+}
+.lg>h3{
+    margin-left: 65px;
+}
+h3 > .line {
+    width: 20px;
+    height: 1px;
+    background: #000;
+}
+
+.zakz-inner {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    position: absolute;
+    top: 85%;
+    transform: translateY(-85%);
+    line-height: 42px;
+}
+
+.col-md-4 {
+    padding-left: 80px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.social-links a {
+    color: #000;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 42px;
+}
+
 
 /*Section info & portfolio*/
 
@@ -329,6 +413,7 @@ div .inf {
 
 .right {
     float: right;
+   
 }
 
 .wh-on-hover {
