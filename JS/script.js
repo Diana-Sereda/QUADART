@@ -23,6 +23,13 @@ navLinks.forEach(link => {
         link.classList.remove("hovered-link");
     });
 });
+
+$(".nav-links").hover(function () {
+    $(".cursor").css("display", "none");
+}, function () {
+    $(".cursor").css("display", "inherit");
+});
+
 //------------------------
 
 //Nav on scroll
@@ -57,7 +64,7 @@ $(function () {
             $("h4").addClass("nav-text");
             $("path").removeClass("fill");
             $("a").removeClass("scrolled");
-        } 
+        }
 
     });
 });
@@ -74,3 +81,31 @@ $(".gray").hover(function () {
         $(".wh-on-hover").css("display", "none");
         $(".dissapear").css("display", "inline");
     });
+
+//------------------------
+
+// Arrow jump
+
+$(".j").hover(function () {
+    $(".j1").css("padding-bottom", "8px")
+        .css("transition", "0.2s");
+}, function () {
+    $(".j1").css("padding-bottom", "0")
+        .css("transition", "0");
+});
+//--------
+$(".j2").hover(function () {
+    $(".j3").css("padding-bottom", "8px")
+        .css("transition", "0.2s");
+}, function () {
+    $(".j3").css("padding-bottom", "0")
+        .css("transition", "0");
+});
+//----------
+$(".j4").hover(function () {
+    $(".j5").css("padding-bottom", "8px")
+        .css("transition", "0.2s");
+}, function () {
+    $(".j5").css("padding-bottom", "0")
+        .css("transition", "0");
+});
