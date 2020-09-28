@@ -109,3 +109,13 @@ $(".j4").hover(function () {
     $(".j5").css("padding-bottom", "0")
         .css("transition", "0");
 });
+
+//Make order window
+$(".zakz").click(function(){
+   $("#make-order").css("display","inherit"); 
+});
+$(".close").click(function(){
+   $("#make-order").css("display","none"); 
+});
+
+
