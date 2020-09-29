@@ -25,12 +25,17 @@
 }
 
 h1,
+h2,
 h3 {
     font-weight: 500;
 }
 
 h1 {
     font-size: 60px;
+}
+
+h2 {
+    font-size: 30px;
 }
 
 h3 {
@@ -45,18 +50,25 @@ h5 {
     line-height: 19px;
     margin-top: 11px;
 }
-ul{
+
+ul {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
+
+.link h3:hover {
+    text-decoration: underline;
+}
+
 body {
     color: #fff;
     font-family: 'Geometria', sans-serif;
     font-style: normal;
     text-align: left;
+    background: #1C1C1C;
 }
 
 .cursor {
@@ -152,9 +164,10 @@ li:hover {
 }
 
 .zakz {
-   position: relative;
+    position: relative;
     top: 8px;
 }
+
 .zakz:hover {
     cursor: pointer;
     top: 0;
@@ -222,12 +235,15 @@ div .link {
     position: absolute;
     width: 100vw;
 }
-.close{
+
+.close {
     position: relative;
 }
-.close:hover{
+
+.close:hover {
     cursor: pointer;
 }
+
 .p1 {
     top: 0;
 }
@@ -247,9 +263,11 @@ div .link {
     display: flex;
     align-items: center;
 }
-.lg>h3{
+
+.lg > h3 {
     margin-left: 65px;
 }
+
 h3 > .line {
     width: 20px;
     height: 1px;
@@ -292,12 +310,12 @@ h3 > .line {
     height: 850px;
     position: relative;
     top: 0;
-    z-index: 1000;
+    z-index: 100;
 }
 
 .about {
     margin-left: 250px;
-     
+
 }
 
 .underline {
@@ -316,6 +334,10 @@ h3 > .line {
 .item {
     margin: 150px 250px 100px 0;
     z-index: 10;
+}
+
+.item a {
+    color: #000;
 }
 
 .wrapper {
@@ -385,20 +407,19 @@ div .inf {
 }
 
 .inner-item h2 {
-    font-size: 30px;
-    font-weight: 500;
     color: #fff;
     margin-bottom: 30px;
-}
-
-.svg :hover {
-    fill: #F5C13F;
 }
 
 .footer-nav {
     font-weight: 500;
     font-size: 20px;
     float: right;
+}
+
+.footer-nav > .nav-links {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .footer-link a {
@@ -413,7 +434,10 @@ div .inf {
 
 .right {
     float: right;
-   
+}
+
+.right h3:hover {
+    text-decoration: none;
 }
 
 .wh-on-hover {
@@ -425,5 +449,106 @@ div .inf {
 }
 
 .gray:hover {
+    color: #fff;
+}
+
+/* Abot page*/
+
+#about-info h1 {
+    line-height: 70px;
+}
+
+.about-header {
+    width: 100vw;
+}
+
+.back h3 {
+    color: #fff;
+    margin-bottom: 33px;
+}
+
+.about-head h3 {
+    line-height: 42px;
+}
+
+.about-intro {
+    max-width: 780px;
+    position: relative;
+    left: 25%;
+    margin-top: 70px;
+    margin-bottom: 130px;
+}
+
+.about-intro h2 {
+    line-height: 40px;
+}
+
+.about-intro h3 {
+    line-height: 30px;
+    margin-top: 50px;
+    padding-left: 70px;
+}
+
+.offers h3 {
+    max-width: 505px;
+    line-height: 30px;
+}
+
+.offers-list {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 145px;
+    font-size: 20px;
+}
+
+.list1 li:before {
+    content: "\2022";
+    color: #707070;
+    font-weight: bold;
+    width: 5px;
+    margin-right: 34px;
+}
+
+.offers-list li {
+    line-height: 30px;
+    text-decoration: none;
+}
+
+.list2 {
+    font-size: 15px;
+    color: #707070;
+    margin-left: 50px;
+}
+
+.make-order {
+    width: 260px;
+    height: 63px;
+    background: #F5C13F;
+    border-radius: 50px;
+    border: 1px solid #F5C13F;
+    box-shadow: 0 5px 10px #F5C13F;
+    margin-bottom: 160px;
+    font-family: 'Geometria', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+/*Another-info*/
+#another-info .underline{
+    background: #fff;
+}
+.another-info{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 120px;
+    
+}
+.info-page img{
+    width: 367px;
+    height: 368px;
+    margin-right: 20px;
+}
+.info-page a{
     color: #fff;
 }
