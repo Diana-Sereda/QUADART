@@ -118,4 +118,38 @@ $(".close").click(function(){
    $("#make-order").css("display","none"); 
 });
 
+//Footer icons on hover
+
+
+$(".media-icon").on('mouseover', function(e) {
+    var hoveredIcon=$(e.target).attr('alt');
+   if(hoveredIcon == "behance"){
+      $(this).attr("src","icons/Group%2042.svg");   
+   } else if(hoveredIcon == "facebook"){
+       $(this).attr("src","icons/Group%2043.svg");     
+   } else if(hoveredIcon == "instagram"){
+       $(this).attr("src","icons/Group%2044.svg");
+   } else if(hoveredIcon == "pinterest"){
+       $(this).attr("src","icons/Group%2045.svg");
+   } else if(hoveredIcon == "telegram"){
+       $(this).attr("src","icons/Group%2046.svg");
+   }
+});
+
+$(".media-icon").on('mouseout', function(e) {
+    var hoveredIcon=$(e.target).attr('alt');
+   if(hoveredIcon == "behance"){
+       $(this).attr("src","icons/1.svg");    
+   } else if(hoveredIcon == "facebook"){
+       $(this).attr("src","icons/2.svg");     
+   } else if(hoveredIcon == "instagram"){
+       $(this).attr("src","icons/3.svg");
+   } else if(hoveredIcon == "pinterest"){
+       $(this).attr("src","icons/4.svg");
+   } else if(hoveredIcon == "telegram"){
+       $(this).attr("src","icons/5.svg");
+   }
+});
+
+
 
