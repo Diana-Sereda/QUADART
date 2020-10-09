@@ -5,7 +5,7 @@
 
 //Cursor Effect
 let mouseCursor = document.querySelector(".cursor");
-let navLinks = document.querySelectorAll(".item");
+let navLinks = document.querySelectorAll(".scale");
 window.addEventListener('mousemove', cursor);
 
 function cursor(e) {
@@ -111,44 +111,53 @@ $(".j4").hover(function () {
 });
 
 //Make order window
-$(".zakz").click(function(){
-   $("#make-order").css("display","inherit"); 
+$(".zakz").click(function () {
+    $("#make-order").css("display", "inherit");
 });
-$(".close").click(function(){
-   $("#make-order").css("display","none"); 
+$(".close").click(function () {
+    $("#make-order").css("display", "none");
+});
+
+//Arrow move
+$(".back").hover(function () {
+    $(".back-to").css("position", "relative");
+    $(".back-to").css("left", "-5px");
+}, function () {
+    $(".back-to").css("position", "relative");
+    $(".back-to").css("left", "0");
 });
 
 //Footer icons on hover
 
 
-$(".media-icon").on('mouseover', function(e) {
-    var hoveredIcon=$(e.target).attr('alt');
-   if(hoveredIcon == "behance"){
-      $(this).attr("src","icons/Group%2042.svg");   
-   } else if(hoveredIcon == "facebook"){
-       $(this).attr("src","icons/Group%2043.svg");     
-   } else if(hoveredIcon == "instagram"){
-       $(this).attr("src","icons/Group%2044.svg");
-   } else if(hoveredIcon == "pinterest"){
-       $(this).attr("src","icons/Group%2045.svg");
-   } else if(hoveredIcon == "telegram"){
-       $(this).attr("src","icons/Group%2046.svg");
-   }
+$(".media-icon").on('mouseover', function (e) {
+    var hoveredIcon = $(e.target).attr('alt');
+    if (hoveredIcon == "behance") {
+        $(this).attr("src", "icons/Group%2042.svg");
+    } else if (hoveredIcon == "facebook") {
+        $(this).attr("src", "icons/Group%2043.svg");
+    } else if (hoveredIcon == "instagram") {
+        $(this).attr("src", "icons/Group%2044.svg");
+    } else if (hoveredIcon == "pinterest") {
+        $(this).attr("src", "icons/Group%2045.svg");
+    } else if (hoveredIcon == "telegram") {
+        $(this).attr("src", "icons/Group%2046.svg");
+    }
 });
 
-$(".media-icon").on('mouseout', function(e) {
-    var hoveredIcon=$(e.target).attr('alt');
-   if(hoveredIcon == "behance"){
-       $(this).attr("src","icons/1.svg");    
-   } else if(hoveredIcon == "facebook"){
-       $(this).attr("src","icons/2.svg");     
-   } else if(hoveredIcon == "instagram"){
-       $(this).attr("src","icons/3.svg");
-   } else if(hoveredIcon == "pinterest"){
-       $(this).attr("src","icons/4.svg");
-   } else if(hoveredIcon == "telegram"){
-       $(this).attr("src","icons/5.svg");
-   }
+$(".media-icon").on('mouseout', function (e) {
+    var hoveredIcon = $(e.target).attr('alt');
+    if (hoveredIcon == "behance") {
+        $(this).attr("src", "icons/1.svg");
+    } else if (hoveredIcon == "facebook") {
+        $(this).attr("src", "icons/2.svg");
+    } else if (hoveredIcon == "instagram") {
+        $(this).attr("src", "icons/3.svg");
+    } else if (hoveredIcon == "pinterest") {
+        $(this).attr("src", "icons/4.svg");
+    } else if (hoveredIcon == "telegram") {
+        $(this).attr("src", "icons/5.svg");
+    }
 });
 
 //Parallax Effect
@@ -156,4 +165,3 @@ $(".media-icon").on('mouseout', function(e) {
 
 var rellax = new Rellax('.part1');
 var rellax = new Rellax('.part2');
-
