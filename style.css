@@ -452,26 +452,25 @@ div .inf {
     color: #fff;
 }
 
-/* Abot page*/
+/* About page*/
 
-#about-info h1 {
+#this-page-info h1 {
     line-height: 70px;
 }
 
-.about-header {
+.page-header {
     width: 100vw;
 }
-
 .back h3 {
     color: #fff;
     margin-bottom: 33px;
 }
 
-.about-head h3 {
+.page-head h3 {
     line-height: 42px;
 }
 
-.about-intro {
+.page-intro {
     max-width: 780px;
     position: relative;
     left: 25%;
@@ -479,11 +478,11 @@ div .inf {
     margin-bottom: 130px;
 }
 
-.about-intro h2 {
+.page-intro h2 {
     line-height: 40px;
 }
 
-.about-intro h3 {
+.page-intro h3 {
     line-height: 30px;
     margin-top: 50px;
     padding-left: 70px;
@@ -533,22 +532,87 @@ div .inf {
     font-weight: 500;
     font-size: 15px;
 }
+.make-order:hover{
+    position: relative;
+    bottom: 5px;
+}
 
 /*Another-info*/
-#another-info .underline{
+#another-info .underline {
     background: #fff;
 }
-.another-info{
+
+.another-info {
     display: flex;
     margin-top: 40px;
     margin-bottom: 120px;
-    
+
 }
-.info-page img{
+
+.info-page img {
     width: 367px;
     height: 368px;
     margin-right: 20px;
 }
-.info-page a{
+
+.info-page a {
     color: #fff;
+}
+
+/*Portfolio page*/
+.name-list {
+    margin-top: 30px;
+    padding-left: 70px;
+    font-size: 20px;
+    line-height: 35px;
+    color: #616161;
+}
+.work{
+    position: relative;
+    margin-bottom: 170px;
+}
+.work h3{
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+.backg-text1{
+    position: absolute;
+    left: 210px;
+    bottom: -87px;
+    z-index: -1;
+}
+.interior{
+    display: flex;
+    position: relative;
+    margin-bottom: 170px;
+}
+.interior h3{
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+.part1{
+    position: relative;
+    top:0;
+}
+.part2{
+    margin-top: 25px;
+    margin-left: 40px;
+    position: relative;
+    
+}
+.part2 img{
+    position: relative;
+    left: -200px;
+}
+.backg-text2{
+    position: absolute;
+    right: 50px;
+    top: -120px;
+    z-index: -1;
+}
+.backg-text3{
+   position: absolute;
+    left: -85px;
+    top: 5px;
+    z-index: -1;
 }
