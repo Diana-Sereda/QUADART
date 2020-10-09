@@ -151,5 +151,9 @@ $(".media-icon").on('mouseout', function(e) {
    }
 });
 
+//Parallax Effect
 
+
+var rellax = new Rellax('.part1');
+var rellax = new Rellax('.part2');
 
