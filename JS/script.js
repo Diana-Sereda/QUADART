@@ -24,7 +24,7 @@ navLinks.forEach(link => {
     });
 });
 
-$(".nav-links").hover(function () {
+$(".no-cursor").hover(function () {
     $(".cursor").css("display", "none");
 }, function () {
     $(".cursor").css("display", "inherit");
@@ -109,6 +109,14 @@ $(".j4").hover(function () {
     $(".j5").css("padding-bottom", "0")
         .css("transition", "0");
 });
+//-----------
+$(".make-order-text h1").hover(function () {
+    $(".make-order-arrow").css("bottom", "0px")
+        .css("transition", "0.2s");
+}, function () {
+    $(".make-order-arrow").css("bottom", "-10px")
+        .css("transition", "0");
+});
 
 //Make order window
 $(".zakz").click(function () {
@@ -133,35 +141,37 @@ $(".back").hover(function () {
 $(".media-icon").on('mouseover', function (e) {
     var hoveredIcon = $(e.target).attr('alt');
     if (hoveredIcon == "behance") {
-        $(this).attr("src", "icons/Group%2042.svg");
+        $(this).attr("src", "icons/Be%20(Yellow).svg");
     } else if (hoveredIcon == "facebook") {
-        $(this).attr("src", "icons/Group%2043.svg");
+        $(this).attr("src", "icons/Fb%20(Yellow).svg");
     } else if (hoveredIcon == "instagram") {
-        $(this).attr("src", "icons/Group%2044.svg");
+        $(this).attr("src", "icons/In%20(Yellow).svg");
     } else if (hoveredIcon == "pinterest") {
-        $(this).attr("src", "icons/Group%2045.svg");
+        $(this).attr("src", "icons/P%20(Yellow).svg");
     } else if (hoveredIcon == "telegram") {
-        $(this).attr("src", "icons/Group%2046.svg");
+        $(this).attr("src", "icons/Tg%20(Yellow).svg");
     }
 });
 
 $(".media-icon").on('mouseout', function (e) {
     var hoveredIcon = $(e.target).attr('alt');
     if (hoveredIcon == "behance") {
-        $(this).attr("src", "icons/1.svg");
+        $(this).attr("src", "icons/Be.svg");
     } else if (hoveredIcon == "facebook") {
-        $(this).attr("src", "icons/2.svg");
+        $(this).attr("src", "icons/Fb.svg");
     } else if (hoveredIcon == "instagram") {
-        $(this).attr("src", "icons/3.svg");
+        $(this).attr("src", "icons/In.svg");
     } else if (hoveredIcon == "pinterest") {
-        $(this).attr("src", "icons/4.svg");
+        $(this).attr("src", "icons/P.svg");
     } else if (hoveredIcon == "telegram") {
-        $(this).attr("src", "icons/5.svg");
+        $(this).attr("src", "icons/Tg.svg");
     }
 });
 
 //Parallax Effect
-
-
 var rellax = new Rellax('.part1');
 var rellax = new Rellax('.part2');
+
+
+//Info page
+
