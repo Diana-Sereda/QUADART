@@ -126,7 +126,6 @@ nav {
     align-items: center;
     justify-content: space-between;
     font-weight: normal;
-    padding-top: 10px;
     font-size: 12px;
 }
 
@@ -163,7 +162,7 @@ li:hover {
     width: 35px;
     height: 40px;
     position: relative;
-    top: 8px;
+    top: 5px;
 }
 
 .zakz:hover {
@@ -417,16 +416,21 @@ div .inf {
     color: #fff;
     margin-bottom: 30px;
 }
-
+.f-part{
+    position: relative;
+    text-align: right;
+}
 .footer-nav {
     font-weight: 500;
     font-size: 20px;
-    float: right;
+    position: absolute;
+    right: 0;
+    margin-top: 30px;
 }
 
 .footer-nav > .nav-links {
     display: flex;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
 }
 
 .footer-link a {
@@ -438,13 +442,9 @@ div .inf {
 .footer-link a:hover {
     color: #fff;
 }
-
-.right {
-    float: right;
-}
-
-.right h3:hover {
-    text-decoration: none;
+.f-part .link{
+  line-height: 75px;
+    margin-top: 70px;
 }
 
 .wh-on-hover {
@@ -542,22 +542,6 @@ div .inf {
     position: relative;
     z-index: 2;
 }
-/*
-.shadow{
-   width: 240px;
-    height: 20px;
-    background: #F5C13F;
-    border-radius: 50px;
-    border: 1px solid #F5C13F;
-    box-shadow: 0 5px 5px 10px #F5C13F;
-    margin-bottom: 160px; 
-    position: relative;
-    top: -10px;
-    left: 10px;
-    transform: translateZ(50px);
-    z-index: 1;
-}
-*/
 
 .make-order:hover {
     position: relative;
@@ -597,7 +581,10 @@ div .inf {
     line-height: 35px;
     color: #616161;
 }
-
+.works-gallery{
+    width: 100%;
+    margin: auto;
+}
 .work {
     position: relative;
     margin-bottom: 170px;
