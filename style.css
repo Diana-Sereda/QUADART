@@ -749,3 +749,14 @@ div .inf {
     margin-top: 0;
     }
 }
+@media(max-width:820px){
+    .no-cursor>li {
+            display: none;
+        }
+        h1{
+        font-size: 40px;
+/*            width: 100%;*/
+        }
+}
+
+
