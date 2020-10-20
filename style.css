@@ -98,6 +98,7 @@ main {
 }
 
 .container {
+    position: relative;
     max-width: 85%;
     margin: auto;
 }
@@ -207,7 +208,6 @@ div .link {
     justify-content: center;
     align-items: center;
     line-height: 75px;
-
 }
 
 .dissapear {
@@ -267,31 +267,35 @@ div .link {
 
 h3 > .line {
     width: 20px;
-    height: 2px;
+    height: 2.2px;
     background: #000;
 }
-
-.zakz-inner {
+.middlePart{
+    display: table;
+}
+.zakz-inner{
+    display: table-cell;
+    text-align: left;
+    width: 80%;
+    margin: auto;
+    vertical-align: middle;
+}
+.innerPart{
     display: flex;
     justify-content: space-between;
-    width: 80%;
-    position: absolute;
-    top: 70%;
-    transform: translateY(-70%);
-    line-height: 42px;
+    margin-top: 15vh;
 }
-.make-order-text>h1{
+.make-order-text > h1 {
     line-height: 70px;
 }
-.make-order-text a{
+
+.make-order-text a {
     color: #000;
 }
-.make-order-arrow{
-   position: relative;
+
+.make-order-arrow {
+    position: relative;
     bottom: -10px;
-}
-.col-md-4 {
-    padding-left: 80px;
 }
 
 .social-links {
@@ -305,6 +309,20 @@ h3 > .line {
     font-weight: 500;
     font-size: 20px;
     line-height: 42px;
+}
+@media (max-width:760px){
+    .innerPart{
+        display: block;
+        margin-top: 5vh;  
+    }
+    .link-part{
+        display: flex;
+        margin-top: 30px;
+        justify-content: space-between;
+    }
+    .social-links{
+         margin-top: 20px;
+    }
 }
 
 
@@ -391,6 +409,7 @@ footer {
 
 .inner-item {
     width: 50%;
+    position: relative;
 }
 
 .inner-item:last-child {
@@ -409,23 +428,26 @@ footer {
 
 div .inf {
     margin-bottom: 30px;
-    min-width: 591px;
+    max-width: 591px;
 }
 
 .inner-item h2 {
+    display: block;
     color: #fff;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
-.f-part{
+
+.f-part {
     position: relative;
     text-align: right;
 }
+
 .footer-nav {
     font-weight: 500;
     font-size: 20px;
     position: absolute;
     right: 0;
-    margin-top: 30px;
+    margin-top: 80px;
 }
 
 .footer-nav > .nav-links {
@@ -442,9 +464,10 @@ div .inf {
 .footer-link a:hover {
     color: #fff;
 }
-.f-part .link{
-  line-height: 75px;
-    margin-top: 70px;
+
+.f-part .link {
+    line-height: 75px;
+    margin-top: 130px;
 }
 
 .wh-on-hover {
@@ -458,6 +481,80 @@ div .inf {
 .gray:hover {
     color: #fff;
 }
+/*Invisible list on large screen*/
+.invisible-list {
+    margin-bottom: 30px;
+    display: none;
+}
+
+.invisible-list .footer-link a {
+    margin: 0;
+}
+
+.inv{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 28px;
+}
+.vis{
+    display: none;
+}
+
+.inv a,
+.vis a{
+    display: flex;
+    color: #fff;
+/*    justify-content: center;*/
+    align-items: center;
+}
+.inv h3,
+.vis h3{
+    font-size: 16px;
+    line-height: 20px;
+}
+
+@media (max-width:1340px)and (min-width:1080px) {
+    .footer-nav {
+        margin-top: 37px;
+    }
+}
+
+@media (max-width:1079px) {
+    nav h4{
+        display: none;
+    }
+    .invisible-list {
+        display: block;
+    }
+    .social-media {
+        margin: 27px 0 55px;
+    }
+    .hide{
+        display: none;
+    }
+    .inv{
+        display: inline-block;
+        position: absolute;
+    }
+    .inner-item:nth-child(1){
+        width: 80%;
+    }
+    .inner-item:nth-child(2){
+        width: 20%;
+    }
+}
+@media (max-width:890px){
+    .inv{
+        display: none;
+    }
+    .vis{
+        display: inline-block;
+    }
+}
+
+
 
 /* About page*/
 
@@ -481,7 +578,8 @@ div .inf {
 .page-intro {
     max-width: 780px;
     position: relative;
-    left: 25%;
+/*    left: 25%;*/
+    margin-left: 25%;
     margin-top: 70px;
     margin-bottom: 130px;
 }
@@ -495,7 +593,6 @@ div .inf {
     margin-top: 50px;
     padding-left: 70px;
 }
-
 .offers h3 {
     max-width: 505px;
     line-height: 30px;
@@ -581,9 +678,9 @@ div .inf {
     line-height: 35px;
     color: #616161;
 }
-.works-gallery{
+.part1 img,
+.part2 img {
     width: 100%;
-    margin: auto;
 }
 .work {
     position: relative;
@@ -612,6 +709,7 @@ div .inf {
     line-height: 35px;
     margin-bottom: 30px;
 }
+
 .part1 {
     position: relative;
     top: 0;
@@ -621,7 +719,6 @@ div .inf {
     margin-top: 25px;
     margin-left: 40px;
     position: relative;
-
 }
 
 .part2 img {
@@ -641,4 +738,14 @@ div .inf {
     left: -85px;
     top: 5px;
     z-index: -1;
+}
+@media(max-width:990px){
+    .work img{
+        width: 100%;
+    }
+}
+@media(max-width:1240px){
+    .part2 {
+    margin-top: 0;
+    }
 }
