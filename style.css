@@ -270,21 +270,25 @@ h3 > .line {
     height: 2.2px;
     background: #000;
 }
-.middlePart{
+
+.middlePart {
     display: table;
 }
-.zakz-inner{
+
+.zakz-inner {
     display: table-cell;
     text-align: left;
     width: 80%;
     margin: auto;
     vertical-align: middle;
 }
-.innerPart{
+
+.innerPart {
     display: flex;
     justify-content: space-between;
     margin-top: 15vh;
 }
+
 .make-order-text > h1 {
     line-height: 70px;
 }
@@ -297,7 +301,9 @@ h3 > .line {
     position: relative;
     bottom: -10px;
 }
-
+.link-part h2{
+    max-width: 260px;
+}
 .social-links {
     display: flex;
     justify-content: space-between;
@@ -310,18 +316,21 @@ h3 > .line {
     font-size: 20px;
     line-height: 42px;
 }
-@media (max-width:760px){
-    .innerPart{
+
+@media (max-width:760px) {
+    .innerPart {
         display: block;
-        margin-top: 5vh;  
+        margin-top: 5vh;
     }
-    .link-part{
+
+    .link-part {
         display: flex;
         margin-top: 30px;
         justify-content: space-between;
     }
-    .social-links{
-         margin-top: 20px;
+
+    .social-links {
+        margin-top: 20px;
     }
 }
 
@@ -358,27 +367,21 @@ h3 > .line {
 .item {
     margin: 150px 250px 100px 0;
     z-index: 10;
+
 }
 
 .item a {
     color: #000;
 }
 
-.wrapper {
-    display: flex;
-    flex-direction: row;
-    margin-top: 300px;
-    width: 100vw;
-    transform: rotate(90deg) translateY(-100vh);
-    transform-origin: top left;
-}
-
 .outer-wrapper {
     background: #D9D9D9;
+    /*
     width: 100vh;
     height: 100vw;
     transform: rotate(-90deg) translateX(-100vh);
     transform-origin: top left;
+*/
     overflow-y: scroll;
     overflow-x: hidden;
     position: relative;
@@ -390,6 +393,30 @@ h3 > .line {
     display: none;
 }
 
+.add1 {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    /*    margin-left: 250px; ----------*/
+    /*
+    margin-top: 300px;
+    width: 100vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+*/
+}
+
+.add2 {
+    margin-top: 300px;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
 
 /*Footer*/
 
@@ -481,6 +508,7 @@ div .inf {
 .gray:hover {
     color: #fff;
 }
+
 /*Invisible list on large screen*/
 .invisible-list {
     margin-bottom: 30px;
@@ -491,70 +519,31 @@ div .inf {
     margin: 0;
 }
 
-.inv{
+.inv {
     display: none;
     position: absolute;
     bottom: 0;
     right: 0;
     margin-bottom: 28px;
 }
-.vis{
+
+.vis {
     display: none;
 }
 
 .inv a,
-.vis a{
+.vis a {
     display: flex;
     color: #fff;
-/*    justify-content: center;*/
+    /*    justify-content: center;*/
     align-items: center;
 }
+
 .inv h3,
-.vis h3{
+.vis h3 {
     font-size: 16px;
     line-height: 20px;
 }
-
-@media (max-width:1340px)and (min-width:1080px) {
-    .footer-nav {
-        margin-top: 37px;
-    }
-}
-
-@media (max-width:1079px) {
-    nav h4{
-        display: none;
-    }
-    .invisible-list {
-        display: block;
-    }
-    .social-media {
-        margin: 27px 0 55px;
-    }
-    .hide{
-        display: none;
-    }
-    .inv{
-        display: inline-block;
-        position: absolute;
-    }
-    .inner-item:nth-child(1){
-        width: 80%;
-    }
-    .inner-item:nth-child(2){
-        width: 20%;
-    }
-}
-@media (max-width:890px){
-    .inv{
-        display: none;
-    }
-    .vis{
-        display: inline-block;
-    }
-}
-
-
 
 /* About page*/
 
@@ -578,7 +567,6 @@ div .inf {
 .page-intro {
     max-width: 780px;
     position: relative;
-/*    left: 25%;*/
     margin-left: 25%;
     margin-top: 70px;
     margin-bottom: 130px;
@@ -593,6 +581,7 @@ div .inf {
     margin-top: 50px;
     padding-left: 70px;
 }
+
 .offers h3 {
     max-width: 505px;
     line-height: 30px;
@@ -678,10 +667,12 @@ div .inf {
     line-height: 35px;
     color: #616161;
 }
+
 .part1 img,
 .part2 img {
     width: 100%;
 }
+
 .work {
     position: relative;
     margin-bottom: 170px;
@@ -739,17 +730,72 @@ div .inf {
     top: 5px;
     z-index: -1;
 }
-@media(max-width:990px){
-    .work img{
+
+
+@media (max-width:1340px)and (min-width:1080px) {
+    .footer-nav {
+        margin-top: 37px;
+    }
+}
+
+@media(max-width:1240px) {
+    .part2 {
+        margin-top: 0;
+    }
+}
+
+@media (max-width:1079px) {
+    nav h4 {
+        display: none;
+    }
+
+    .invisible-list {
+        display: block;
+    }
+
+    .social-media {
+        margin: 27px 0 55px;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .inv {
+        display: inline-block;
+        position: absolute;
+    }
+
+    .inner-item:nth-child(1) {
+        width: 80%;
+    }
+
+    .inner-item:nth-child(2) {
+        width: 20%;
+    }
+}
+
+@media (max-width:890px) {
+    .inv {
+        display: none;
+    }
+
+    .vis {
+        display: inline-block;
+    }
+}
+
+@media(max-width:990px) {
+    .work img {
         width: 100%;
     }
 }
-@media(max-width:1240px){
-    .part2 {
-    margin-top: 0;
+
+/*For Mobile screens*/
+@media(max-width:820px) {
+    .cursor{
+        display: none;
     }
-}
-    @media(max-width:820px) {
     .no-cursor > li {
         display: none;
     }
@@ -776,6 +822,15 @@ div .inf {
         width: 100%;
     }
 
+    .make-order-arrow {
+        width: 40px;
+        height: auto;
+    }
+
+    .link-part {
+        display: block;
+    }
+
     .social-links a {
         font-size: 15px;
         line-height: 22px;
@@ -787,11 +842,15 @@ div .inf {
     }
 
     .about {
-        margin-left: 10px;
+        margin: 30px 0 0 20px;
+    }
+
+    .text-img {
+        width: 80%;
     }
 
     .item img {
-        width: 50vw;
+        width: 90vw;
         height: auto;
     }
 
