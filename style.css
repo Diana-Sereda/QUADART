@@ -71,7 +71,7 @@ body {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    border: 2px solid #F5C13F;
+    border: #F5C13F solid 2px ;
     background: #F5C13F;
     position: absolute;
     transform: translate(80%, -80%);
@@ -183,21 +183,6 @@ li:hover {
     top: 40%;
     transform: translateY(-40%);
 }
-
-.with-line {
-    display: flex;
-    align-items: center;
-}
-
-.line {
-    content: '';
-    width: 69px;
-    height: 5px;
-    background: #fff;
-    margin: 0 20px;
-    margin: 0 20px;
-}
-
 div .link {
     display: inline-block;
 }
@@ -369,8 +354,6 @@ h3 > .line {
     overflow-y: scroll;
     overflow-x: hidden;
     position: relative;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
 }
 
 ::-webkit-scrollbar {
