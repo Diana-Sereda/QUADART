@@ -301,9 +301,11 @@ h3 > .line {
     position: relative;
     bottom: -10px;
 }
-.link-part h2{
+
+.link-part h2 {
     max-width: 260px;
 }
+
 .social-links {
     display: flex;
     justify-content: space-between;
@@ -349,7 +351,7 @@ h3 > .line {
 
 .item {
     margin: 150px 250px 100px 0;
-   z-index: 10;
+    z-index: 10;
 }
 
 .item a {
@@ -358,7 +360,7 @@ h3 > .line {
 
 .outer-wrapper {
     background: #D9D9D9;
-    
+
     width: 100vh;
     height: 100vw;
     transform: rotate(-90deg) translateX(-100vh);
@@ -374,11 +376,12 @@ h3 > .line {
 ::-webkit-scrollbar {
     display: none;
 }
+
 .wrapper {
     display: flex;
     flex-direction: row;
-/*  margin-left: 250px;*/
-    
+    /*  margin-left: 250px;*/
+
     margin-top: 300px;
     width: 100vw;
     transform: rotate(90deg) translateY(-100vh);
@@ -645,7 +648,7 @@ div .inf {
     margin-bottom: 170px;
 }
 
-.work h3 {
+.works-gallery h3 {
     line-height: 35px;
     margin-bottom: 30px;
 }
@@ -663,11 +666,6 @@ div .inf {
     margin-bottom: 170px;
 }
 
-.interior h3 {
-    line-height: 35px;
-    margin-bottom: 30px;
-}
-
 .part1 {
     position: relative;
     top: 0;
@@ -678,7 +676,6 @@ div .inf {
     margin-left: 40px;
     position: relative;
 }
-
 .part2 img {
     position: relative;
     left: -200px;
@@ -704,11 +701,13 @@ div .inf {
         margin-top: 37px;
     }
 }
+
 @media(max-width:1240px) {
     .part2 {
         margin-top: 0;
     }
 }
+
 @media (max-width:1079px) {
     nav h4 {
         display: none;
@@ -739,11 +738,13 @@ div .inf {
         width: 20%;
     }
 }
+
 @media(max-width:990px) {
     .work img {
         width: 100%;
     }
 }
+
 @media (max-width:890px) {
     .inv {
         display: none;
@@ -752,7 +753,25 @@ div .inf {
     .vis {
         display: inline-block;
     }
+
+    .works-gallery h3 {
+        line-height: 20px;
+    }
+
+    .part1 img {
+        width: 60vw;
+    }
+
+    .part2 img {
+        width: 65vw;
+        left: -250px;
+    }
+
+    .part2 {
+        top: -100px;
+    }
 }
+
 @media (max-width:760px) {
     .innerPart {
         display: block;
@@ -772,9 +791,10 @@ div .inf {
 
 /*For Mobile screens*/
 @media(max-width:820px) {
-    .cursor{
+    .cursor {
         display: none;
     }
+
     .no-cursor > li {
         display: none;
     }
@@ -829,7 +849,6 @@ div .inf {
         width: 85vw;
         height: auto;
     }
-
     .inner-item > img {
         width: 100%;
     }
@@ -840,11 +859,12 @@ div .inf {
     }
 
     .list1 li:before {
-        margin-right: 15px;
+        margin-right: 10px;
     }
 
     .offers-list li {
         line-height: 20px;
+        font-size: 15px;
     }
 
     .list2 {
