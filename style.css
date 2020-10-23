@@ -614,7 +614,7 @@ div .inf {
 }
 
 /*Portfolio page*/
-.name-list {
+.name-list a {
     margin-top: 30px;
     padding-left: 70px;
     font-size: 20px;
