@@ -288,6 +288,7 @@ h3 > .line {
 }
 
 .link-part h2 {
+    padding-top: 13px;
     max-width: 260px;
 }
 
