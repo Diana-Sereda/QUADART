@@ -57,7 +57,7 @@ $(function () {
             var $win = $(window);
 
             $win.scroll(function () {
-                    if (($win.scrollTop() == 0) || (navigator.userAgent.match(/iPad|iPhone|iPod|Android|Windows Phone/i))) {
+                    if ($win.scrollTop() == 0){
                             header.classList.remove("nav-scrolled");
                             $("h4").addClass("nav-text");
                             $("path").removeClass("fill");
