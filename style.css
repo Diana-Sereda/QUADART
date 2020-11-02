@@ -242,6 +242,7 @@ div .link {
     position: fixed;
     top: 0;
     left: 0;
+    display: none;
     background-color: #F5C13F;
     background-size: cover;
     width: 100vw;
