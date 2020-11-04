@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--[if lt IE 9]>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
 
     <title>About</title>
 </head>
@@ -53,7 +57,20 @@
                         <li>(Не сложная анимация)</li>
                     </ul>
                 </div>
-                <button class="make-order">ЗАКАЗАТЬ ДИЗАЙН</button>
+                <div class="link-box">
+                    <div><a href="price-list.pdf" class="price-list" target="_blank">Price List</a></div>
+                    <a href="mailto:vadim.parshukov.199d@mail.ru" class="make-order no-cursor">ЗАКАЗАТЬ ДИЗАЙН</a>
+                </div>
+                <div class="to-order">
+                    <ol>
+                        <li>Опишите нам на почте свою задачу</li>
+                        <li>Оставьте контактые данные для связи с Вами</li>
+                    </ol>
+                    
+                <h3>Мы дадим Вам оперативный ответ по срокам и стоимости </h3>
+                </div>
+
+
             </div>
         </div>
     </section>
@@ -64,17 +81,17 @@
             <div class="another-info">
                 <div class="info-page scale">
                     <a href="https://www.instagram.com/backerworks/ " target="_blank"> <img src="img/Dmitrii.png" alt="Dmitrii">
-                        <h5>Дмитрий Мандзюк / Креатив / Основатель</h5>
+                        <h5>Дмитрий <span class="to-hide"> Мандзюк / Креатив / Основатель</span></h5>
                     </a>
                 </div>
                 <div class="info-page scale">
                     <a href="https://www.instagram.com/_vadim_designer_/ " target="_blank"><img src="img/Vadim.png" alt="Vadim">
-                        <h5>Вадим Паршуков / Креатив / Продвижение / Основатель</h5>
+                        <h5>Вадим<span class="to-hide"> Паршуков / Креатив / Продвижение / Основатель</span></h5>
                     </a>
                 </div>
                 <div class="info-page scale">
                     <a href="portfolio.html"><img src="img/Portfolio.png" alt="Portfolio">
-                        <h5>Портфолио / Основные работы</h5>
+                        <h5>Портфолио <span class="to-hide">/ Основные работы</span></h5>
                     </a>
                 </div>
 
@@ -99,23 +116,11 @@
                             <img class="media-icon" src="icons/In.svg" alt="instagram">
                         </a>
                         <a href="https://www.pinterest.ru/QuadArt_Design/_saved/ " target="_blank">
-                            <img class="media-icon" src="icons/P.svg" alt="pinterest">
-                        </a>
-                        <a href="#">
-                            <img class="media-icon" src="icons/Tg.svg" alt="telegram">
+                            <img class="media-icon last-i" src="icons/P.svg" alt="pinterest">
                         </a>
                     </div>
 
                     <!--Invisible part-->
-                    <ul class="invisible-list no-cursor">
-                        <li class="footer-link"><a href="about.html">О нас</a></li>
-                        <li class="footer-link"><a href="portfolio.html">Портфолио</a></li>
-                        <li class="footer-link"><a href="#">Заказать дизайн</a></li>
-                    </ul>
-
-                    <div class="inf">QuadArt - Это студия графического дизайна <br> Online формата</div>
-                    <div class="inf">2020 “QUADART STUDIO” <br>Копирование и распространение материалов на сайте только с разрешения правообладателя. <br> Вся информация на сайте не является публичной офертой</div>
-                    
                     <div class="vis">
                         <div class="no-cursor">
                             <a href="https://www.instagram.com/quadart.design/" target="_blank">
@@ -132,6 +137,16 @@
                         </div>
                     </div>
                     
+                    <ul class="invisible-list no-cursor">
+                        <li class="footer-link"><a href="about.html">О нас</a></li>
+                        <li class="footer-link"><a href="portfolio.html">Портфолио</a></li>
+                        <li class="footer-link"><a href="mailto:vadim.parshukov.199d@mail.ru">Заказать дизайн</a></li>
+                    </ul>
+
+
+                    <div class="inf">QuadArt - Это студия графического дизайна <br> Online формата</div>
+                    <div class="inf">2020 “QUADART STUDIO” <br>Копирование и распространение материалов на сайте только с разрешения правообладателя. <br> Вся информация на сайте не является публичной офертой</div>
+
                 </div>
                 <div class="inner-item ">
                     <div class="hide">
@@ -149,7 +164,7 @@
                                         <a href="about.html">О нас</a>
                                     </li>
                                     <li class="footer-link"><a href="portfolio.html">Портфолио</a></li>
-                                    <li class="footer-link"><a href="#">Заказать дизайн</a></li>
+                                    <li class="footer-link"><a href="mailto:vadim.parshukov.199d@mail.ru">Заказать дизайн</a></li>
                                 </ul>
                             </nav>
                             <div class="link no-cursor">
@@ -161,7 +176,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="inv">
                         <div class="no-cursor">
                             <a href="https://www.instagram.com/quadart.design/" target="_blank">
@@ -177,7 +192,7 @@
                             </a>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -187,4 +202,6 @@
     <!--    jQuery CDN-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="JS/script.js"></script>
-</body></html>
+</body>
+
+</html>
