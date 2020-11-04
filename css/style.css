@@ -59,7 +59,7 @@ h5 {
     margin-top: 11px;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
@@ -408,7 +408,6 @@ h3 > .line {
 
 .outer-wrapper {
     background: #D9D9D9;
-
     width: 100vh;
     height: 100vw;
     -webkit-transform: rotate(-90deg) translateX(-100vh);
@@ -417,7 +416,6 @@ h3 > .line {
     -webkit-transform-origin: top left;
     -ms-transform-origin: top left;
     transform-origin: top left;
-
     overflow-y: scroll;
     overflow-x: hidden;
     position: relative;
@@ -428,6 +426,7 @@ h3 > .line {
 }
 
 .wrapper {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -435,8 +434,7 @@ h3 > .line {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    /*  margin-left: 250px;*/
-
+    margin-left: 50px;
     margin-top: 300px;
     width: 100vw;
     -webkit-transform: rotate(90deg) translateY(-100vh);
@@ -445,6 +443,18 @@ h3 > .line {
     -webkit-transform-origin: top left;
     -ms-transform-origin: top left;
     transform-origin: top left;
+}
+
+.swipe {
+    color:#707070; 
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin: 0 0 150px 20px;
+    bottom: 0;
+}
+.swipe img{
+    margin: 10px 0 0 10px;
 }
 
 /*Footer*/
@@ -705,7 +715,8 @@ ol {
     padding-left: 23px;
     margin: 40px 0;
 }
-ol>li:hover{
+
+ol > li:hover {
     text-decoration: none;
 }
 
@@ -957,12 +968,11 @@ ol>li:hover{
     }
 
     .item img {
-        width: 85vw;
+/*        width: 85vw;*/
         height: auto;
     }
 
     h3 {
-        font-size: 20px;
         line-height: 15px;
     }
 
