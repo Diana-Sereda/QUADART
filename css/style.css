@@ -968,7 +968,7 @@ ol > li:hover {
     }
 
     .item img {
-/*        width: 85vw;*/
+        width: 85vw;
         height: auto;
     }
 
