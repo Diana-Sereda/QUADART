@@ -450,7 +450,7 @@ h3 > .line {
     display: flex;
     align-items: center;
     position: absolute;
-    margin: 0 0 150px 20px;
+    margin: 0 0 150px 250px;
     bottom: 0;
 }
 .swipe img{
@@ -995,6 +995,9 @@ ol > li:hover {
 
     .inf:last-child {
         text-align: center;
+    }
+    .swipe{
+        margin: 0 0 150px 20px;
     }
 }
 
