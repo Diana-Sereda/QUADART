@@ -1044,6 +1044,10 @@ ol>li:hover{
     .lg h3 {
         font-size: 15px;
     }
+    .back h3{
+        font-size: 17px;
+        line-height: 30px;
+    }
 }
 
 @media(max-width:375px) {
