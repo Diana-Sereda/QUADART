@@ -56,7 +56,7 @@ window.onscroll = function () {
 $(function () {
     var $win = $(window);
 
-    $win.scroll(function returnNav() {
+    $win.scroll(function () {
         if ($win.scrollTop() == 0) {
             header.classList.remove("nav-scrolled");
             $("h4").addClass("nav-text");
@@ -65,9 +65,6 @@ $(function () {
         }
 
     });
-    if (navigator.userAgent.match(/iPad|iPhone|iPod|Android|Windows Phone/i)) {
-        returnNav();
-    }
 });
 
 
