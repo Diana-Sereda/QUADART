@@ -1067,6 +1067,12 @@ ol > li:hover {
 }
 
 @media(max-width:375px) {
+    body:after {
+        content: "";
+        position: fixed;
+        top: 0;
+        height: 100vh;
+    }
     main {
         background: url(../img/backg-mob.png) no-repeat;
         background-size: cover;
