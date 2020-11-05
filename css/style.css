@@ -1090,4 +1090,8 @@ ol > li:hover {
     div .inf{
         margin-bottom: 0;
     }
+    .item img {
+        width: 85vw;
+        height: auto;
+    }
 }
