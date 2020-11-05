@@ -393,7 +393,8 @@ h3 > .line {
 
 .text-img {
     position: absolute;
-    left: -280px;
+    top: 30px;
+    left: -100px;
     z-index: 1;
 }
 
@@ -434,8 +435,8 @@ h3 > .line {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    margin-left: 50px;
-    margin-top: 300px;
+    margin-left: 30px;
+    margin-top: 350px;
     width: 100vw;
     -webkit-transform: rotate(90deg) translateY(-100vh);
     -ms-transform: rotate(90deg) translateY(-100vh);
@@ -450,7 +451,7 @@ h3 > .line {
     display: flex;
     align-items: center;
     position: absolute;
-    margin: 0 0 150px 250px;
+    margin: 0 0 70px 250px;
     bottom: 0;
 }
 .swipe img{
@@ -555,14 +556,6 @@ div .inf {
 }
 
 /*Invisible list on large screen*/
-.invisible-list {
-    margin-bottom: 30px;
-    display: none;
-}
-
-.invisible-list .footer-link a {
-    margin: 0;
-}
 
 .inv {
     display: none;
@@ -681,11 +674,16 @@ div .inf {
     position: relative;
     top: -50px;
 }
+.price-list:hover{
+    color: #fff;
+    text-decoration: underline;
+}
 
 .make-order {
     background: #F5C13F;
     border-radius: 50px;
     border: 1px solid #F5C13F;
+    transition: 0.7s;
     font-family: 'Geometria', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -698,7 +696,7 @@ div .inf {
 }
 
 .make-order:hover {
-    transition: 0.5s;
+    transition: 0.7s;
     box-shadow: 0 0 5px #F5C13F,
         0 0 15px #F5C13F,
         0 0 30px #F5C13F,
@@ -824,7 +822,11 @@ ol > li:hover {
     z-index: -1;
 }
 
-
+@media(min-width:1360px){
+    .container{
+        max-width: 1200px;
+    }
+}
 @media (max-width:1340px)and (min-width:1080px) {
     .footer-nav {
         margin-top: 37px;
@@ -841,11 +843,6 @@ ol > li:hover {
     nav h4 {
         display: none;
     }
-
-    .invisible-list {
-        display: block;
-    }
-
     .social-media {
         margin: 27px 0 55px;
     }
@@ -968,7 +965,7 @@ ol > li:hover {
     }
 
     .item img {
-        width: 85vw;
+        width: 70vw;
         height: auto;
     }
 
@@ -1008,7 +1005,7 @@ ol > li:hover {
     }
 
     .make-order-text {
-       margin: 100px 0 50px 0;
+        margin: 100px 0 50px 0;
     }
 
     .lg h3 {
@@ -1025,6 +1022,9 @@ ol > li:hover {
 @media(max-width:695px) {
     .list2 {
         display: none;
+    }
+    .text-img{
+        width: 500vw;
     }
 }
 
@@ -1061,6 +1061,9 @@ ol > li:hover {
         font-size: 17px;
         line-height: 30px;
     }
+    .wrapper{
+        margin-top: 100px;
+    }
 }
 
 @media(max-width:375px) {
@@ -1070,8 +1073,21 @@ ol > li:hover {
         height: 100vh;
         background-attachment: fixed;
     }
-
     .make-order-arrow {
         width: 40px;
+    }
+    .name-list{
+        margin-left: -22%;
+        margin-top: 50px;
+    }
+    .rel-inf{
+        font-size: 15px;
+    }
+    .policy{
+        font-size: 10px;
+        margin-top:60px;
+    }
+    div .inf{
+        margin-bottom: 0;
     }
 }
