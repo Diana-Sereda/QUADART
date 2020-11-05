@@ -1074,14 +1074,7 @@ ol > li:hover {
         height: 100vh;
     }
     main {
-        background: url(../img/backg-mob.png) center center no-repeat;
-        -webkit-background-size: 100%; 
-        -moz-background-size: 100%; 
-        -o-background-size: 100%; 
-        background-size: 100%; 
-        -webkit-background-size: cover; 
-        -moz-background-size: cover; 
-        -o-background-size: cover; 
+        background: url(../img/backg-mob.png)no-repeat;
         background-size: cover;
         height: 100vh;
         background-attachment: fixed;
