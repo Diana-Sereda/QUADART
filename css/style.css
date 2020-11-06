@@ -1076,6 +1076,7 @@ ol > li:hover {
     main {
         background: url(../img/backg-mob.png)no-repeat;
         background-size: contain;
+        width:100vw;
         height: 100vh;
         background-attachment: fixed;
     }
