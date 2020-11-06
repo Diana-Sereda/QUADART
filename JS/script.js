@@ -37,7 +37,7 @@ $(".no-cursor").hover(function () {
 var prevScrollpos = window.pageYOffset;
 const header = document.querySelector("header");
 const main = document.querySelector("main");
-window.onscroll = function () {
+window.addEventListener("scroll", function () {
     var currentScrollPos = window.pageYOffset;
     var $win = $(window);
     if (prevScrollpos > currentScrollPos) {
@@ -48,10 +48,10 @@ window.onscroll = function () {
         $("a").addClass("scrolled");
 
     } else {
-        document.getElementById("navbar").style.top = "-70px";
+        document.getElementById("navbar").style.top = "-40px";
     }
     prevScrollpos = currentScrollPos;
-};
+});
 
 $(function () {
     var $win = $(window);
@@ -62,29 +62,12 @@ $(function () {
             $("h4").addClass("nav-text");
             $("path").removeClass("fill");
             $("a").removeClass("scrolled");
+            document.getElementById("navbar").style.top = "0";
         }
 
     });
+
 });
-
-//For Sfari
-var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
-    navigator.userAgent &&
-    navigator.userAgent.indexOf('CriOS') == -1 &&
-    navigator.userAgent.indexOf('FxiOS') == -1;
-if (isSafari){
-    var $win = $(window);
-
-    $win.scroll(function () {
-        if ($win.scrollTop() === 0) {
-            header.classList.remove("nav-scrolled");
-            $("h4").addClass("nav-text");
-            $("path").removeClass("fill");
-            $("a").removeClass("scrolled");
-        }
-
-    });
-}
         //------------------------
 
 
