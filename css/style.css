@@ -1069,6 +1069,7 @@ ol > li:hover {
 @media(max-width:375px) {
     main {
          background: url(../img/backg-mob.png) no-repeat;
+         width: 125vw;
         -webkit-background-size: contain;
         background-size: contain;
         height: 100vh;
