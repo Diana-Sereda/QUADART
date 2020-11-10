@@ -87,8 +87,6 @@ body {
     transform: translate(80%, -80%);
     pointer-events: none;
     display: inherit;
-    -webkit-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
     z-index: 10000;
 }
@@ -270,7 +268,7 @@ div .link {
 }
 
 .p2 {
-    bottom: 0;
+    bottom: -100px;
 }
 
 .head {
@@ -447,14 +445,15 @@ h3 > .line {
 }
 
 .swipe {
-    color:#707070; 
+    color: #707070;
     display: flex;
     align-items: center;
     position: absolute;
     margin: 0 0 70px 250px;
     bottom: 0;
 }
-.swipe img{
+
+.swipe img {
     margin: 10px 0 0 10px;
 }
 
@@ -661,20 +660,23 @@ div .inf {
 }
 
 .link-box {
+    display: inline-block;
     position: relative;
-    width: 265px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 90px;
+}
+.link-box div:nth-child(3){
+    margin-bottom: 30px;
 }
 
-.price-list {
+.link-box-inf {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
     color: #707070;
-    position: relative;
-    top: -50px;
 }
-.price-list:hover{
+
+.link-box-inf:hover {
     color: #fff;
     text-decoration: underline;
 }
@@ -683,7 +685,7 @@ div .inf {
     background: #F5C13F;
     border-radius: 50px;
     border: 1px solid #F5C13F;
-    transition: 0.7s;
+    transition: 0.6s;
     font-family: 'Geometria', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -691,17 +693,14 @@ div .inf {
     color: #1C1C1C;
     padding: 20px 54px;
     position: absolute;
-    bottom: 0;
     z-index: 2;
 }
 
 .make-order:hover {
-    transition: 0.7s;
+    transition: 0.6s;
     box-shadow: 0 0 5px #F5C13F,
-        0 0 15px #F5C13F,
-        0 0 30px #F5C13F,
-        0 0 60px #F5C13F;
-
+        0 0 10px #F5C13F,
+        0 0 20px #F5C13F;
 }
 
 ol {
@@ -711,7 +710,6 @@ ol {
     line-height: 30px;
     color: #707070;
     padding-left: 23px;
-    margin: 40px 0;
 }
 
 ol > li:hover {
@@ -721,6 +719,14 @@ ol > li:hover {
 .to-order h3 {
     max-width: 100%;
     color: #707070;
+    margin-bottom: 20px;
+}
+.all-links{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+  color: #707070;  
 }
 
 /*Another-info*/
@@ -822,11 +828,12 @@ ol > li:hover {
     z-index: -1;
 }
 
-@media(min-width:1360px){
-    .container{
+@media(min-width:1360px) {
+    .container {
         max-width: 1200px;
     }
 }
+
 @media (max-width:1340px)and (min-width:1080px) {
     .footer-nav {
         margin-top: 37px;
@@ -843,6 +850,7 @@ ol > li:hover {
     nav h4 {
         display: none;
     }
+
     .social-media {
         margin: 27px 0 55px;
     }
@@ -993,7 +1001,8 @@ ol > li:hover {
     .inf:last-child {
         text-align: center;
     }
-    .swipe{
+
+    .swipe {
         margin: 0 0 150px 20px;
     }
 }
@@ -1023,7 +1032,8 @@ ol > li:hover {
     .list2 {
         display: none;
     }
-    .text-img{
+
+    .text-img {
         width: 500vw;
     }
 }
@@ -1057,42 +1067,61 @@ ol > li:hover {
     .lg h3 {
         font-size: 15px;
     }
-    .back h3{
+
+    .back h3 {
         font-size: 17px;
         line-height: 30px;
     }
-    .wrapper{
+
+    .wrapper {
         margin-top: 100px;
+    }
+    ol{
+     margin-top: 100px;
     }
 }
 
 @media(max-width:375px) {
     main {
-         background: url(../img/backg-mob.png) no-repeat;
+        background: url(../img/backg-mob.png) no-repeat;
         background-size: 100vw;
         height: 100vh;
         -webkit-background-attachment: fixed;
         background-attachment: fixed;
     }
+    .p2{
+        bottom: -10px;
+    }
     .make-order-arrow {
         width: 40px;
     }
-    .name-list{
+
+    .name-list {
         margin-left: -22%;
         margin-top: 50px;
     }
-    .rel-inf{
+
+    .rel-inf {
         font-size: 15px;
     }
-    .policy{
+
+    .policy {
         font-size: 10px;
-        margin-top:60px;
+        margin-top: 60px;
     }
-    div .inf{
+
+    div .inf {
         margin-bottom: 0;
     }
+
     .item img {
         width: 85vw;
         height: auto;
     }
+
+    .backg-text1 {
+        left: 0;
+        bottom: -15px;
+    }
+    
 }
