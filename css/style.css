@@ -762,6 +762,7 @@ ol > li:hover {
 /*Portfolio page*/
 .name-list a {
     margin-top: 30px;
+    margin-right: 0;
     padding-left: 70px;
     font-size: 20px;
     line-height: 35px;
