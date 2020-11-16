@@ -73,6 +73,7 @@ body {
     font-style: normal;
     text-align: left;
     background: #1C1C1C;
+    scrollbar-width: none;
 }
 
 .cursor {
@@ -1082,7 +1083,7 @@ ol > li:hover {
     }
 }
 
-@media(max-width:375px) {
+@media(max-width:385px) {
     main {
         background: url(../img/backg-mob.png) no-repeat;
         background-size: 100vw;
