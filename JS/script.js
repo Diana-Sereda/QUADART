@@ -34,76 +34,42 @@ $(".no-cursor").hover(function () {
 
 //Nav on scroll
 
-//var prevScrollpos = window.pageYOffset;
-//const header = document.querySelector("header");
-//const main = document.querySelector("main");
-//window.onscroll = function () {
-//    var currentScrollPos = window.pageYOffset;
-//    var $win = $(window);
-//    if (prevScrollpos > currentScrollPos) {
-//        document.getElementById("navbar").style.top = "0";
-//        header.classList.add("nav-scrolled");
-//        $("h4").removeClass("nav-text");
-//        $("path").addClass("fill");
-//        $("a").addClass("scrolled");
-//
-//    } else {
-//        document.getElementById("navbar").style.top = "-70px";
-//    }
-//    prevScrollpos = currentScrollPos;
-//};
-//
-//$(function () {
-//    var $win = $(window);
-//
-//    $win.scroll(function () {
-//        if ($win.scrollTop() === 0) {
-//            header.classList.remove("nav-scrolled");
-//            $("h4").addClass("nav-text");
-//            $("path").removeClass("fill");
-//            $("a").removeClass("scrolled");
-//        }
-//
-//    });
-//
-//});
-
-
 var prevScrollpos = window.pageYOffset;
 const header = document.querySelector("header");
 const main = document.querySelector("main");
-window.addEventListener("scroll", function () {
-    var currentScrollPos = window.pageYOffset;
-    var $win = $(window);
-    if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").style.top = "0";
-        header.classList.add("nav-scrolled");
-        $("h4").removeClass("nav-text");
-        $("path").addClass("fill");
-        $("a").addClass("scrolled");
-
-    } else {
-        document.getElementById("navbar").style.top = "-40px";
-    }
-    prevScrollpos = currentScrollPos;
-});
-
-$(function () {
-    var $win = $(window);
-
-    $win.scroll(function () {
-        if ($win.scrollTop() === 0) {
-            header.classList.remove("nav-scrolled");
-            $("h4").addClass("nav-text");
-            $("path").removeClass("fill");
-            $("a").removeClass("scrolled");
+if ($("main").length > 0) {
+    window.addEventListener("scroll", function () {
+        var currentScrollPos = window.pageYOffset;
+        var $win = $(window);
+        if (prevScrollpos > currentScrollPos) {
             document.getElementById("navbar").style.top = "0";
-        }
+            header.classList.add("nav-scrolled");
+            $("h4").removeClass("nav-text");
+            $("path").addClass("fill");
+            $("a").addClass("scrolled");
 
+        } else {
+            document.getElementById("navbar").style.top = "-40px";
+        }
+        prevScrollpos = currentScrollPos;
     });
 
-});
+    $(function () {
+        var $win = $(window);
 
+        $win.scroll(function () {
+            if ($win.scrollTop() === 0) {
+                header.classList.remove("nav-scrolled");
+                $("h4").addClass("nav-text");
+                $("path").removeClass("fill");
+                $("a").removeClass("scrolled");
+                document.getElementById("navbar").style.top = "0";
+            }
+
+        });
+
+    });
+}
 //------------------------
 
 
@@ -186,7 +152,7 @@ $(".media-icon").on('mouseover', function (e) {
         $(this).attr("src", "icons/In%20(Yellow).svg");
     } else if (hoveredIcon == "pinterest") {
         $(this).attr("src", "icons/P%20(Yellow).svg");
-    }else if (hoveredIcon == "telegram") {
+    } else if (hoveredIcon == "telegram") {
         $(this).attr("src", "icons/Tg%20(Yellow).svg");
     }
 });
@@ -201,7 +167,7 @@ $(".media-icon").on('mouseout', function (e) {
         $(this).attr("src", "icons/In.svg");
     } else if (hoveredIcon == "pinterest") {
         $(this).attr("src", "icons/P.svg");
-    }else if (hoveredIcon == "telegram") {
+    } else if (hoveredIcon == "telegram") {
         $(this).attr("src", "icons/Tg.svg");
     }
 });
@@ -210,6 +176,3 @@ $(".media-icon").on('mouseout', function (e) {
 var rellax = new Rellax('.part1');
 var rellax = new Rellax('.part2');
 var rellax = new Rellax('.p-effect');
-
-
-//Main page
