@@ -1081,9 +1081,6 @@ ol > li:hover {
     ol{
      margin-top: 100px;
     }
-}
-
-@media(max-width:385px) {
     main {
         background: url(../img/backg-mob.png) no-repeat;
         background-size: 100vw;
@@ -1125,5 +1122,5 @@ ol > li:hover {
         left: 0;
         bottom: -15px;
     }
-    
 }
+
